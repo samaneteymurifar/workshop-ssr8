@@ -9,7 +9,8 @@
 import express from 'express';
 import React from 'react';
 import {renderToString} from 'react-dom/server';
-import Home from './client/components/Home'
+import Home from './client/components/Home';
+
 
 const app=express(); 
 app.use(express.static('public'))
@@ -19,7 +20,7 @@ app.get('/',(req,resp)=>{
         <head></head>
         <body>
             I am Html
-            ${content}
+            <div id="root">${content}</div>
             <script src="bundle.js"></script>
         </body>
     `

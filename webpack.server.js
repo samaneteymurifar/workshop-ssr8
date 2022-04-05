@@ -1,4 +1,4 @@
-// const { version } = require('os')
+
 const path=require('path')
 
 module.exports={
@@ -8,8 +8,6 @@ module.exports={
 
     // فایل ورودی که می خواهیم به  اکمااسکریپت5 تبدیل بشه
     entry:'./src/index.js',
-    mode:'none',
-
     output:{
         filename:"bundle.js",
         path:path.resolve(__dirname,'build')
