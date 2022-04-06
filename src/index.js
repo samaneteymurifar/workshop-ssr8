@@ -12,8 +12,8 @@ import  renderer  from './helper/renderer';
 
 const app=express(); 
 app.use(express.static('public'))
-app.get('/',(req,resp)=>{
-    resp.send(renderer())
+app.get('*',(req,resp)=>{
+    resp.send(renderer(req))
 })
 
 const port = 4200;
