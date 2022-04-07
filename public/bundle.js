@@ -736,7 +736,17 @@ eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/i
   \***************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _zarebin_image = __webpack_require__(/*! ../../assest/zarebin_image.gif */ \"./src/assest/zarebin_image.gif\");\n\nvar _zarebin_image2 = _interopRequireDefault(_zarebin_image);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Home = function Home() {\n    return _react2.default.createElement(\n        \"div\",\n        null,\n        _react2.default.createElement(\n            \"div\",\n            null,\n            \"I am home samane test1\"\n        ),\n        _react2.default.createElement(\"img\", { src: _zarebin_image2.default }),\n        _react2.default.createElement(\n            \"button\",\n            { onClick: function onClick() {\n                    return console.log(\"hello world\");\n                } },\n            \"press me\"\n        )\n    );\n};\nexports[\"default\"] = Home;\n\n//# sourceURL=webpack://server-render/./src/client/components/Home.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _zarebin_image = __webpack_require__(/*! ../../assest/zarebin_image.gif */ \"./src/assest/zarebin_image.gif\");\n\nvar _zarebin_image2 = _interopRequireDefault(_zarebin_image);\n\nvar _flower = __webpack_require__(/*! ../../assest/flower.png */ \"./src/assest/flower.png\");\n\nvar _flower2 = _interopRequireDefault(_flower);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Home = function Home() {\n    return _react2.default.createElement(\n        \"div\",\n        null,\n        _react2.default.createElement(\n            \"div\",\n            null,\n            \"I am home samane\"\n        ),\n        _react2.default.createElement(\"img\", { src: _flower2.default }),\n        _react2.default.createElement(\"img\", { src: _zarebin_image2.default }),\n        _react2.default.createElement(\n            \"button\",\n            { onClick: function onClick() {\n                    return console.log(\"hello world\");\n                } },\n            \"press me\"\n        )\n    );\n};\nexports[\"default\"] = Home;\n\n//# sourceURL=webpack://server-render/./src/client/components/Home.js?");
+
+/***/ }),
+
+/***/ "./src/assest/flower.png":
+/*!*******************************!*\
+  !*** ./src/assest/flower.png ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"static/media/flower.2c15b04f.png\");\n\n//# sourceURL=webpack://server-render/./src/assest/flower.png?");
 
 /***/ }),
 
@@ -799,6 +809,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n\n\nObject.defineProperty(exp
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -813,6 +835,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n\n\nObject.defineProperty(exp
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
