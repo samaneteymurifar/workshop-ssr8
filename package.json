@@ -6,7 +6,6 @@
   "scripts": {
     "server": "nodemon build/bundle.js",
     "build-server": "webpack --config 'webpack.server.js' --watch"
-    
   },
   "author": "",
   "license": "ISC",
@@ -37,6 +36,7 @@
     "redux": "3.7.2",
     "redux-thunk": "2.2.0",
     "serialize-javascript": "1.4.0",
+    "url-loader": "^4.1.1",
     "webpack": "3.5.6",
     "webpack-dev-server": "2.8.2",
     "webpack-merge": "4.1.0",
