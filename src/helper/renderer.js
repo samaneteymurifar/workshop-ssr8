@@ -1,26 +1,28 @@
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import Home from '../client/components/Home';
-import { StaticRouter } from 'react-router-dom';
-import Routes from '../client/Routes';
 
+import React from "react";
+import { renderToString } from "react-dom/server";
+import { StaticRouter } from 'react-router-dom'
+import Routes from "../client/Routes";
+import {Provider} from "react-redux";
 
-export default(req)=> {
+export default (req, store) => {
     const content = renderToString(
-        <StaticRouter location={req.path} context ={{}}>
-            <Routes/>
-        </StaticRouter>
-    )
-    const html = `
+        <Provider store={store}>
+            
+            <StaticRouter location={req.path} context={{}}>
+                <Routes />
+            </StaticRouter>
+        </Provider>
+    );
+    return `
+    
+    <html>
         <head></head>
         <body>
-            I am Html
             <div id="root">${content}</div>
-            <script>
-               var exports = {}; // defining an empty exports object is that common workaround
-            </script>
             <script src="bundle.js"></script>
         </body>
-    `;
-    return html;
+    </html>
+  `;
 }
+
